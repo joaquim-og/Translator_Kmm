@@ -93,4 +93,12 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+    task("testClasses")
+}
+
+sqldelight {
+    database("TranslateDatabase") {
+        packageName = "com.confradestech.translator_kmm.database"
+        sourceFolders = listOf("sqldelight")
+    }
 }
