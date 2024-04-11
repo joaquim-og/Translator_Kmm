@@ -1,5 +1,6 @@
 package com.confradestech.translator_kmm.android.tanslate.presentation
 
+import android.speech.tts.TextToSpeech
 import android.widget.Toast
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
@@ -22,8 +23,10 @@ import com.confradestech.translator_kmm.android.R
 import com.confradestech.translator_kmm.android.tanslate.presentation.components.LanguageDropDown
 import com.confradestech.translator_kmm.android.tanslate.presentation.components.SwapLanguagesButton
 import com.confradestech.translator_kmm.android.tanslate.presentation.components.TranslateTextField
+import com.confradestech.translator_kmm.android.tanslate.presentation.components.rememberTextToSpeech
 import com.confradestech.translator_kmm.translate.presentation.TranslateEvent
 import com.confradestech.translator_kmm.translate.presentation.TranslateState
+import java.util.Locale
 
 @OptIn(ExperimentalComposeUiApi::class)
 @Composable
@@ -88,6 +91,7 @@ fun TranslateScreen(
                 val clipboardManager = LocalClipboardManager.current
                 val keyboardController = LocalSoftwareKeyboardController.current
                 val context = LocalContext.current
+                val tts = rememberTextToSpeech()
 
                 TranslateTextField(
                     fromText = state.fromText,
@@ -118,12 +122,20 @@ fun TranslateScreen(
                         onEvent(TranslateEvent.CloseTranslation)
                     },
                     onSpeakerClick = {
-
+                        tts.language = state.toLanguage.toLocale() ?: Locale.ENGLISH
+                        tts.speak(
+                            state.toText,
+                            TextToSpeech.QUEUE_FLUSH,
+                            null,
+                            null
+                        )
                     },
                     onTextFieldClick = {
                         onEvent(TranslateEvent.EditTranslation)
                     },
-                    modifier = Modifier.fillMaxWidth().padding(16.dp)
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(16.dp)
                 )
             }
         }
