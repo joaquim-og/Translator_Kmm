@@ -42,23 +42,6 @@ struct TranslateTextField: View {
     }
 }
 
-
-struct TranslateTextField_Previews: PreviewProvider {
-    static var previews: some View {
-        ForEach(ColorScheme.allCases, id: \.self) { colorScheme in
-            TranslateTextField(
-                fromText: Binding(get: {"Test"}, set: {_ in}),
-                toText: "TExt",
-                isTranslating: false,
-                fromLanguage: UiLanguage(language: .english, imageName: "english"),
-                toLanguage: UiLanguage(language: .czech, imageName: "czech"),
-                onTranslateEvent: {_ in}
-            )
-            .preferredColorScheme(colorScheme)
-        }
-    }
-}
-
 private extension TranslateTextField {
     
     struct idleTextField: View {
@@ -170,5 +153,20 @@ private extension TranslateTextField {
             )
         }
     }
-    
+}
+
+struct TranslateTextField_Previews: PreviewProvider {
+    static var previews: some View {
+        ForEach(ColorScheme.allCases, id: \.self) { colorScheme in
+            TranslateTextField(
+                fromText: Binding(get: {"Test"}, set: {_ in}),
+                toText: "TExt",
+                isTranslating: true,
+                fromLanguage: UiLanguage(language: .english, imageName: "english"),
+                toLanguage: UiLanguage(language: .czech, imageName: "czech"),
+                onTranslateEvent: {_ in}
+            )
+            .preferredColorScheme(colorScheme)
+        }
+    }
 }
