@@ -15,7 +15,7 @@ struct SwapLanguageButton: View {
     }
 }
 
-struct LSwapLanguageButton_Previews: PreviewProvider {
+struct SwapLanguageButton_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(ColorScheme.allCases, id: \.self) { colorScheme in
             SwapLanguageButton(onClick: {})
