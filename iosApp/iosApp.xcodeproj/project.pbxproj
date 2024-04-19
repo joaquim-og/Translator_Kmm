@@ -24,6 +24,8 @@
 		34946B532BCDB2D700B8C79C /* TranslateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34946B522BCDB2D700B8C79C /* TranslateTextField.swift */; };
 		34B192212BC871F400E170CC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B192202BC871F400E170CC /* Colors.swift */; };
 		34B192272BC8767E00E170CC /* LanguageDropDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B192262BC8767E00E170CC /* LanguageDropDownItem.swift */; };
+		34D6420D2BD2F57500B83668 /* MicrophonePowerObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D6420C2BD2F57500B83668 /* MicrophonePowerObserver.swift */; };
+		34D6420F2BD2F90800B83668 /* IosVoiceToTextParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D6420E2BD2F90800B83668 /* IosVoiceToTextParser.swift */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		34946B522BCDB2D700B8C79C /* TranslateTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateTextField.swift; sourceTree = "<group>"; };
 		34B192202BC871F400E170CC /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		34B192262BC8767E00E170CC /* LanguageDropDownItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageDropDownItem.swift; sourceTree = "<group>"; };
+		34D6420C2BD2F57500B83668 /* MicrophonePowerObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MicrophonePowerObserver.swift; path = ../../../../../../Downloads/MicrophonePowerObserver.swift; sourceTree = "<group>"; };
+		34D6420E2BD2F90800B83668 /* IosVoiceToTextParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosVoiceToTextParser.swift; sourceTree = "<group>"; };
 		6982F26049EBD563571906BC /* Pods-iosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.debug.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.debug.xcconfig"; sourceTree = "<group>"; };
 		7555FF7B242A565900829871 /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -123,6 +127,23 @@
 			path = components;
 			sourceTree = "<group>";
 		};
+		34D6420A2BD2F51300B83668 /* voice_to_text */ = {
+			isa = PBXGroup;
+			children = (
+				34D6420B2BD2F52100B83668 /* data */,
+			);
+			path = voice_to_text;
+			sourceTree = "<group>";
+		};
+		34D6420B2BD2F52100B83668 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				34D6420C2BD2F57500B83668 /* MicrophonePowerObserver.swift */,
+				34D6420E2BD2F90800B83668 /* IosVoiceToTextParser.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
 		7555FF72242A565900829871 = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +165,7 @@
 		7555FF7D242A565900829871 /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
+				34D6420A2BD2F51300B83668 /* voice_to_text */,
 				34B192222BC8765A00E170CC /* translate */,
 				34B1921E2BC871BA00E170CC /* core */,
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
@@ -305,8 +327,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				34946B512BCDB11E00B8C79C /* ProgressButton.swift in Sources */,
+				34D6420D2BD2F57500B83668 /* MicrophonePowerObserver.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				34B192272BC8767E00E170CC /* LanguageDropDownItem.swift in Sources */,
+				34D6420F2BD2F90800B83668 /* IosVoiceToTextParser.swift in Sources */,
 				3464FA9A2BC9B90C00DC72F0 /* SmallLanguageIcon.swift in Sources */,
 				34946B4F2BCDAF4400B8C79C /* LanguageDisplay.swift in Sources */,
 				34946B4D2BCDAE1C00B8C79C /* GradientSurfacce.swift in Sources */,
