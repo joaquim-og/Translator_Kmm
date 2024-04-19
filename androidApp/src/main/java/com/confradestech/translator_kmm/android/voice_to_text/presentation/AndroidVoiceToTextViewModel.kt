@@ -22,6 +22,10 @@ class AndroidVoiceToTextViewModel @Inject constructor(
 
     val state = viewModel.state
 
+    fun initSpeechCollector() {
+        viewModel.initSpeechCollector()
+    }
+
     fun onEvent(event: VoiceToTextEvent) {
         viewModel.onEvent(event)
     }
