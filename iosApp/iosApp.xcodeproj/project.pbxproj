@@ -14,6 +14,7 @@
 		341DA5822BC9BD3100CE16E7 /* IOSTranslateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341DA5812BC9BD3100CE16E7 /* IOSTranslateViewModel.swift */; };
 		341DA5842BC9BD5A00CE16E7 /* TranslateScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341DA5832BC9BD5A00CE16E7 /* TranslateScreen.swift */; };
 		343EA1EC2BD6F2440012A024 /* MicrophonePowerObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343EA1EB2BD6F2440012A024 /* MicrophonePowerObserver.swift */; };
+		343EA1EF2BD6F39A0012A024 /* IOSVoiceToTextViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343EA1EE2BD6F39A0012A024 /* IOSVoiceToTextViewModel.swift */; };
 		3464FA982BC9B68C00DC72F0 /* LanguageDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3464FA972BC9B68C00DC72F0 /* LanguageDropDown.swift */; };
 		3464FA9A2BC9B90C00DC72F0 /* SmallLanguageIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3464FA992BC9B90C00DC72F0 /* SmallLanguageIcon.swift */; };
 		3464FA9C2BC9BB3000DC72F0 /* SwapLanguageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3464FA9B2BC9BB3000DC72F0 /* SwapLanguageButton.swift */; };
@@ -37,6 +38,7 @@
 		341DA5812BC9BD3100CE16E7 /* IOSTranslateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSTranslateViewModel.swift; sourceTree = "<group>"; };
 		341DA5832BC9BD5A00CE16E7 /* TranslateScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateScreen.swift; sourceTree = "<group>"; };
 		343EA1EB2BD6F2440012A024 /* MicrophonePowerObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrophonePowerObserver.swift; sourceTree = "<group>"; };
+		343EA1EE2BD6F39A0012A024 /* IOSVoiceToTextViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSVoiceToTextViewModel.swift; sourceTree = "<group>"; };
 		3464FA972BC9B68C00DC72F0 /* LanguageDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageDropDown.swift; sourceTree = "<group>"; };
 		3464FA992BC9B90C00DC72F0 /* SmallLanguageIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallLanguageIcon.swift; sourceTree = "<group>"; };
 		3464FA9B2BC9BB3000DC72F0 /* SwapLanguageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapLanguageButton.swift; sourceTree = "<group>"; };
@@ -74,6 +76,14 @@
 				058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		343EA1ED2BD6F3800012A024 /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				343EA1EE2BD6F39A0012A024 /* IOSVoiceToTextViewModel.swift */,
+			);
+			path = presentation;
 			sourceTree = "<group>";
 		};
 		34B1921E2BC871BA00E170CC /* core */ = {
@@ -130,6 +140,7 @@
 		34D6420A2BD2F51300B83668 /* voice_to_text */ = {
 			isa = PBXGroup;
 			children = (
+				343EA1ED2BD6F3800012A024 /* presentation */,
 				34D6420B2BD2F52100B83668 /* data */,
 			);
 			path = voice_to_text;
@@ -327,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34946B512BCDB11E00B8C79C /* ProgressButton.swift in Sources */,
+				343EA1EF2BD6F39A0012A024 /* IOSVoiceToTextViewModel.swift in Sources */,
 				343EA1EC2BD6F2440012A024 /* MicrophonePowerObserver.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				34B192272BC8767E00E170CC /* LanguageDropDownItem.swift in Sources */,
