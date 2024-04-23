@@ -21,8 +21,11 @@ import Combine
         self.parser = parser
         self.languageCode = langagueCode
         self.viewModel = VoiceToTextViewModel(
-        parser: parser,
-        coroutineScope: nil
+            parser: parser,
+            coroutineScope: nil
+        )
+        self.viewModel.onEvent(
+            event: VoiceToTextEvent.PermissionResult(isGranted: true, isPermanentlyDeclined: false)
         )
     }
     
@@ -36,6 +39,7 @@ import Combine
                 self?.state = state
             }
         }
+        viewModel.doInitSpeechCollector()
     }
     
     func dispose() {
