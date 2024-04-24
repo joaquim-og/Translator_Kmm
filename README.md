@@ -31,5 +31,6 @@ All past translations are stored on localDB for easy history search 🔍.
 
 | Android | IOS |
 |---|---|
-| <img width="380" alt="Home No habits LM" src="https://github.com/joaquim-og/Translator_Kmm/assets/37637934/8e8d4b40-04dd-4278-87f7-9d1a75c9b414"> | <img width="382" alt="Home" src="https://github.com/joaquim-og/Translator_Kmm/assets/37637934/7bec9ce4-9f53-42dc-8d03-09fb53f74214"> |
+| <img width="380" alt="Home Android" src="https://github.com/joaquim-og/Translator_Kmm/assets/37637934/8e8d4b40-04dd-4278-87f7-9d1a75c9b414"> | <img width="382" alt="Home IOS" src="https://github.com/joaquim-og/Translator_Kmm/assets/37637934/7bec9ce4-9f53-42dc-8d03-09fb53f74214"> |
+| <img width="380" alt="Speech to text Android" src="https://github.com/joaquim-og/Translator_Kmm/assets/37637934/f23c68c2-af91-46ff-b2f7-b5d8e99bc0b1"> | <img width="382" alt="Speech to text IOS" src="https://github.com/joaquim-og/Translator_Kmm/assets/37637934/f432c963-7b2b-4db9-a91f-00435938a61a"> |
 
